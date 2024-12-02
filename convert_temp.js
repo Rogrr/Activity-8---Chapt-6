@@ -64,13 +64,15 @@ const convertTemp = () => {
 const toCelsius = () => toggleDisplay("Enter F degrees:", "Degrees Celsius:");
 const toFahrenheit = () => toggleDisplay("Enter C degrees:", "Degrees Fahrenheit:");
 
+// events listeners 
+
 document.addEventListener("DOMContentLoaded", () => {
 	// add event handlers
 	$("#convert").addEventListener("click", convertTemp);
     $("#to_celsius").addEventListener("click", toCelsius);
     $("#to_fahrenheit").addEventListener("click", toFahrenheit);
 	
-	// move focus
+	// move focus after event
 	$("#degrees_entered").focus();
 });
 
